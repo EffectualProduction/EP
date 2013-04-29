@@ -1,10 +1,10 @@
-==Proyecto -- Effectual Production (Production Control)
+=Proyecto -- Effectual Production (Production Control)
 
-=Proyecto de Formacion elaborado por:
+==Proyecto de Formacion elaborado por:
 
--Cristian Jimenez
--Juan Pablo Gallego
--Santiago Pareja
+<tt>-Cristian Jimenez</tt>
+<tt>-Juan Pablo Gallego</tt>
+<tt>-Santiago Pareja</tt>
 
 Esta Aplicación estará centrada en el Proceso de control de Producción del Centro
 de confección y moda (SENA), y por esta razón constará de cuatro (4) Módulos, con
