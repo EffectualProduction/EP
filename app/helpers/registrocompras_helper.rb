@@ -1,0 +1,2 @@
+module RegistrocomprasHelper
+end

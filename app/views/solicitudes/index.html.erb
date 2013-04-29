@@ -1,0 +1,58 @@
+<%- model_class = Solicitud -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:cantidad) %></th>
+      <th><%= model_class.human_attribute_name(:cliente_id) %></th>
+      <th><%= model_class.human_attribute_name(:dias_faltantes) %></th>
+      <th><%= model_class.human_attribute_name(:fecha_aprobacion) %></th>
+      <th><%= model_class.human_attribute_name(:fecha_entrega_cliente) %></th>
+      <th><%= model_class.human_attribute_name(:fecha_solicitud) %></th>
+      <th><%= model_class.human_attribute_name(:instructor_id) %></th>
+      <th><%= model_class.human_attribute_name(:producto) %></th>
+      <th><%= model_class.human_attribute_name(:resolucion) %></th>
+      <th><%= model_class.human_attribute_name(:saldo) %></th>
+      <th><%= model_class.human_attribute_name(:total) %></th>
+      <th><%= model_class.human_attribute_name(:unidades_entregadas) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @solicitudes.each do |solicitud| %>
+      <tr>
+        <td><%= link_to solicitud.id, solicitud_path(solicitud) %></td>
+        <td><%= solicitud.cantidad %></td>
+        <td><%= solicitud.cliente_id %></td>
+        <td><%= solicitud.dias_faltantes %></td>
+        <td><%= solicitud.fecha_aprobacion %></td>
+        <td><%= solicitud.fecha_entrega_cliente %></td>
+        <td><%= solicitud.fecha_solicitud %></td>
+        <td><%= solicitud.instructor_id %></td>
+        <td><%= solicitud.producto %></td>
+        <td><%= solicitud.resolucion %></td>
+        <td><%= solicitud.saldo %></td>
+        <td><%= solicitud.total %></td>
+        <td><%= solicitud.unidades_entregadas %></td>
+        <td><%=l solicitud.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_solicitud_path(solicitud), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      solicitud_path(solicitud),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_solicitud_path,
+            :class => 'btn btn-primary' %>

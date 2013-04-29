@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cantidad: 1
+  cliente_id: 1
+  dias_faltantes: 1
+  fecha_aprobacion: 2013-04-29
+  fecha_entrega_cliente: 2013-04-29
+  fecha_solicitud: 2013-04-29
+  instructor_id: 1
+  producto: MyString
+  resolucion: MyString
+  saldo: 1
+  total: 1
+  unidades_entregadas: 1
+
+two:
+  cantidad: 1
+  cliente_id: 1
+  dias_faltantes: 1
+  fecha_aprobacion: 2013-04-29
+  fecha_entrega_cliente: 2013-04-29
+  fecha_solicitud: 2013-04-29
+  instructor_id: 1
+  producto: MyString
+  resolucion: MyString
+  saldo: 1
+  total: 1
+  unidades_entregadas: 1

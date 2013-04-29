@@ -1,0 +1,9 @@
+<%= simple_form_for @bordado, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :fecha_envio %>
+  <%= f.input :fecha_llegada %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                bordados_path, :class => 'btn' %>
+  </div>
+<% end %>

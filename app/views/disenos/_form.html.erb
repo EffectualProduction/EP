@@ -1,0 +1,10 @@
+<%= simple_form_for @diseno, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :color %>
+  <%= f.input :corte %>
+  <%= f.input :talla %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                disenos_path, :class => 'btn' %>
+  </div>
+<% end %>

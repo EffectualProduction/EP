@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  primapellido: MyString
+  secapellido: MyString
+  clave: MyString
+  email: MyString
+  fecha_nac: 2013-04-29
+  primnombre: MyString
+  secnombre: MyString
+  num_cedula: MyString
+
+two:
+  primapellido: MyString
+  secapellido: MyString
+  clave: MyString
+  email: MyString
+  fecha_nac: 2013-04-29
+  primnombre: MyString
+  secnombre: MyString
+  num_cedula: MyString
