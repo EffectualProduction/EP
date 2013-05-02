@@ -1,11 +1,12 @@
-<%= simple_form_for @nota, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :items %>
-  <%= f.input :num_documento_recibe %>
-  <%= f.input :unidad %>
-  <%= f.input :tipo %>
+<%= simple_form_for(@nota, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.input :items, :label => "Items",  :required => true %>
+  <%= f.input :num_documento_recibe, :label => "Num documento recibe",  :required => true %>
+  <%= f.input :unidad, :label => "Unidad",  :required => true %>
+  <%= f.input :tipo, :label => "Tipo",  :required => true %>
+  
   <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                notas_path, :class => 'btn' %>
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', notas_path, :class => 'btn btn-small' %>
   </div>
 <% end %>
