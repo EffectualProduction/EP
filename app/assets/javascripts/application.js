@@ -13,4 +13,39 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require lazybox
+<<<<<<< HEAD
+//= require_tree . 
+
+$(document).ready(function() {
+  
+  $('a#show_nota_link').lazybox({closeImg: true});
+  
+  $('a[rel*=lazybox]').lazybox({close: false, modal: false, opacity: 0.7, klass: 'lazybox', speed: 200});
+  $.lazybox.settings = {cancelClass: "button green", submitClass: 'button red', closeImg: false, niceClose: false}
+  $.rails.allowAction = $.lazybox.confirm;
+ 
+});
+=======
 //= require_tree .
+
+
+$(document).ready(function() {
+ 
+ $('a#show_team_link').lazybox({closeImg: true});
+ 
+ $('a[rel*=lazybox]').lazybox({close: false, modal: false, opacity: 0.7, klass: 'lazybox', speed: 200});
+ $.lazybox.settings = {cancelClass: "button green", submitClass: 'button red', closeImg: false, niceClose: false}
+ $.rails.allowAction = $.lazybox.confirm;
+
+});
+$(document).ready(function() {
+ 
+ $('a#show_team_link').lazybox({closeImg: true});
+ 
+ $('a[rel*=lazybox]').lazybox({close: false, modal: false, opacity: 0.7, klass: 'lazybox', speed: 200});
+ $.lazybox.settings = {cancelClass: "button green", submitClass: 'button red', closeImg: false, niceClose: false}
+ $.rails.allowAction = $.lazybox.confirm;
+
+});
+>>>>>>> dde6e191e98fb309b9fc3cc58ccb273d215e5abc

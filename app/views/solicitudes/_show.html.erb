@@ -1,0 +1,19 @@
+<%- model_class = Solicitud -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<div class='solicitud'>
+  <p><%= @solicitud.id %></p>
+  <p><%= @solicitud.producto %></p>
+  <p><%= @solicitud.cantidad %></p>
+  <p><%= @solicitud.dias_faltantes %></p>
+  <p><%= @solicitud.fecha_aprobacion %></p>
+  <p><%= @solicitud.fecha_entrega_cliente %></p>
+  <p><%= @solicitud.fecha_solicitud %></p>
+  <p><%= @solicitud.resolucion %></p>
+  <p><%= @solicitud.saldo %></p>
+  <p><%= @solicitud.unidades_entregadas %></p>
+  <p><%= @solicitud.created_at %></p>
+  <p><%= @solicitud.created_at %></p>
+</div>

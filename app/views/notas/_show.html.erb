@@ -1,0 +1,12 @@
+<%- model_class = Nota -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<div class='nota'>
+  <p><%= @nota.id %></p>
+  <p><%= @nota.items%></p>
+  <p><%= @nota.num_documento_recibe%></p>
+  <p><%= @nota.unidad%></p>
+  <p><%= @nota.tipo%></p>
+</div>

@@ -9,8 +9,58 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require lazybox
+ *= require_jquery-ui
  *= require_tree .
  */
+
+ #lazybox div.estudiante { max-width: 500px; }
+ #lazybox div.curso { max-width: 500px; }
+ #lazybox div.instructor { max-width: 500px; }
+ #lazybox div.materia{ max-width: 500px; }
+ #lazybox div.horario { max-width: 500px; height: auto;}
+
+.lazybox {
+  background: transparent !important;
+}
+
+#lazybox_close.img {
+  background: url('close.png') no-repeat;
+  width: 55px;
+  height: 55px;
+  top: -37px;
+  right: -37px;
+}
+
+#lazybox.sticker {
+  -webkit-border-bottom-left-radius: 20px 500px;
+  -webkit-border-bottom-right-radius: 500px 30px;
+  -webkit-border-top-right-radius: 5px 100px;
+  -moz-border-radius-bottomleft: 20px 500px;
+  -moz-border-radius-bottomright: 500px 30px;
+  -moz-border-radius-topright: 5px 100px;
+  border-radius-bottomleft: 20px 500px;
+  border-radius-bottomright: 500px 30px;
+  border-radius-topright: 5px 100px;
+  border-bottom-left-radius: 20px 500px;
+  border-bottom-right-radius: 500px 30px;
+  border-top-right-radius: 5px 100px;
+}
+
+#lazybox.top {
+  border-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+
+#lazybox.player {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+
 body {
   background-size: 100%;
   margin: 0;

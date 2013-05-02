@@ -1,0 +1,17 @@
+<tr id=<%= "nota_#{nota.id}" %>>
+  <td><%= link_to nota.id, edit_nota_path(nota), :remote => true %></td>
+  <td><%= nota.items %></td>
+  <td><%= nota.num_documento_recibe %></td>
+  <td><%= nota.unidad %></td>
+  <td><%= nota.tipo %></td>
+   <td><%= nota.created_at %></td>
+
+  <td>
+    <%= link_to 'Mostrar', nota, :remote => true, :class => 'btn btn-mini' %>
+    <%= link_to 'Editar', edit_nota_path(nota), :remote => true,
+        :class => 'btn btn-mini' %>
+    <%= link_to 'Eliminar', nota, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+  </td>
+</tr>
