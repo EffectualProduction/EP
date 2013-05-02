@@ -11,3 +11,72 @@
  *= require_self
  *= require_tree .
  */
+body {
+  background-size: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+
+}
+
+.navbar{
+  height: 10px;
+}
+
+input#bus{
+  width: 150px;
+}
+
+form#bus{
+  margin-left: 80px;
+  margin-top: -20px;
+}
+
+li#ef{
+  margin-left: 850px;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+div#but{
+margin-top:-35px;
+margin-left: 30px;
+ }
+
+footer#foter{
+  margin-top:368px;
+  margin-left: -0px; 
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border-radius: 4px; 
+}
+
+div#tra{
+  margin-left: -200px;
+  margin-top: 50px;
+}
+
+p#he{
+  color: gray;
+}
+
+div#nava{
+  margin-left: 350px;
+  margin-top: -60px;
+}
+
+
+img#img{
+  margin-top: -30px;
+  margin-left: -900px;
+  width: 300px;
+}
+
+
+
+
+

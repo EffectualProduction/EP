@@ -6,9 +6,55 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body background='assets/fondo.png'>
+<div id='navb' class="navbar">
+  <div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+ <div id='nava' class="navbar"> 
+   <div id='tra' class="tabbable tabs-below">
+  <ul class="nav nav-tabs">
+   <li id='ef' >Effectual Production</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<div id='but'>
+   <div id='nava' class=""> 
+  <div class="navbar navbar-inverse">
+ <ul class="nav nav-tabs" >
+    <li><a href="#tab1" data-toggle="tab" ><a href="notas">Notas</a></a></li>
+    <li ><a href="#tab2" data-toggle="tab"><a href="solicitudes">Solicitudes</a></a></li>
+    <li ><a href="#tab3" data-toggle="tab"><a href="registrocompras">Registros</a> </a></li>
+  </ul>
 
+</div>
+</div>
+</div>
+  </div>
+  <form id='bus' class="navbar-search pull-left">
+  <input id='bus' type="text" class="search-query" placeholder="Search">
+</form>
+    </div>
+    <img id='img' src="assets/logo.png">
 <%= yield %>
-
+    <footer id='foter'>
+      <p id='he'>HECHO POR ADSI 323921</p>
+    </footer>
 </body>
 </html>
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p>I'm in Section 1.</p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p>Howdy, I'm in Section 2.</p>
+    </div>
+  </div>
+</div>
