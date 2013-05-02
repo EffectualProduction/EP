@@ -1,0 +1,21 @@
+<tr id=<%= "solicitud_#{solicitud.id}" %>>
+  <td><%= link_to solicitud.id, edit_solicitud_path(solicitud), :remote => true %></td>
+  <td><%= solicitud.producto %></td>
+  <td><%= solicitud.cantidad %></td>
+  <td><%= solicitud.dias_faltantes %></td>
+  <td><%= solicitud.fecha_aprobacion %></td>
+  <td><%= solicitud.fecha_entrega_cliente %></td>
+  <td><%= solicitud.fecha_solicitud %></td>
+  <td><%= solicitud.resolucion %></td>
+  <td><%= solicitud.saldo %></td>
+  <td><%= solicitud.unidades_entregadas %></td>
+
+  <td>
+    <%= link_to image_tag('mostrar.png', :width=>30, :title=>'Mostrar'), solicitud, :remote => true, :class => 'btn btn-success btn-mini' %>
+    <%= link_to image_tag('editar.png', :width=>30, :title=>'Editar'), edit_solicitud_path(solicitud), :remote => true,
+        :class => 'btn btn-mini' %>
+    <%= link_to image_tag('eliminar.png', :width=>30, :title=>'Eliminar'), solicitud, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+  </td>
+</tr>
