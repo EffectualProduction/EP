@@ -18,7 +18,7 @@ development:
   database: effectualproduction_development
   pool: 5
   username: postgres
-  password: oliva
+  password: asd123
   host: localhost
   port: 5432
 
@@ -46,7 +46,7 @@ test:
   database: effectualproduction_test
   pool: 5
   username: postgres
-  password: oliva
+  password: asd123
   host: localhost
   port: 5432
 
@@ -56,6 +56,6 @@ production:
   database: effectualproduction_production
   pool: 5
   username: postgres
-  password: oliva
+  password: asd123
   host: localhost
   port: 5432

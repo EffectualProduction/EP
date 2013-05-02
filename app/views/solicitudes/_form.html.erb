@@ -1,19 +1,23 @@
-<%= simple_form_for @solicitud, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :cantidad %>
-  <%= f.input :cliente_id %>
-  <%= f.input :dias_faltantes %>
-  <%= f.input :fecha_aprobacion %>
-  <%= f.input :fecha_entrega_cliente %>
-  <%= f.input :fecha_solicitud %>
-  <%= f.input :instructor_id %>
-  <%= f.input :producto %>
-  <%= f.input :resolucion %>
-  <%= f.input :saldo %>
-  <%= f.input :total %>
-  <%= f.input :unidades_entregadas %>
+<%= simple_form_for(@solicitud, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+      <%= f.input :cantidad %>
+	  <%= f.input :cliente_id %>
+	  <%= f.input :dias_faltantes %>
+	  <%= f.input :fecha_aprobacion %>
+	  <%= f.input :fecha_entrega_cliente %>
+	  <%= f.input :fecha_solicitud %>
+	  <%= f.input :instructor_id %>
+	  <%= f.input :producto %>
+	  <%= f.input :resolucion %>
+	  <%= f.input :saldo %>
+	  <%= f.input :total %>
+	  <%= f.input :unidades_entregadas %>
+  </div>
+
   <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                solicitudes_path, :class => 'btn' %>
+    <%= f.button :submit, :class => 'btn btn-info' %>
+    <%= link_to 'Cancelar', solicitudes_path, :class => 'btn btn-inverse' %>
   </div>
 <% end %>
