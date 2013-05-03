@@ -30,7 +30,7 @@ $(function(){
 		
 		//agregamos el titulo establecido y el boton cerrar
 		$objVentanaTitulo.append('<strong>'+strTitulo+'</strong>');
-		$objVentanaTitulo.append('<img id="im" src="assets/close.png" class="clsVentanaCerrar">');
+		$objVentanaTitulo.append('<img id="im" src="assets/no.png" class="clsVentanaCerrar">');
 		
 		//agregamos la capa de titulo a la ventana
 		$objVentana.append($objVentanaTitulo);
