@@ -4,7 +4,7 @@ class NotasController < ApplicationController
     @notas = Nota.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @notas }
+      format.json { render json: @notas } 
     end
   end
 

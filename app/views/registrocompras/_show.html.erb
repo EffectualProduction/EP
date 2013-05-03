@@ -1,0 +1,11 @@
+<%- model_class = Registrocompra -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<div class='registrocompra'>
+  <p><%= @registrocompra.id %></p>
+  <p><%= @registrocompra.descripcion_producto%></p>
+  <p><%= @registrocompra.valor_total%></p>
+  <p><%= @registrocompra.valor_unidad%></p>
+</div>
