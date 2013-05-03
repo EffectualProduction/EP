@@ -18,7 +18,11 @@ development:
   database: effectualproduction_development
   pool: 5
   username: postgres
+<<<<<<< HEAD
   password: asd123
+=======
+  password: postgres
+>>>>>>> f99c832ff93d6919c0d702c2d32b1c826b83d76f
   host: localhost
   port: 5432
 
@@ -46,7 +50,11 @@ test:
   database: effectualproduction_test
   pool: 5
   username: postgres
+<<<<<<< HEAD
   password: asd123
+=======
+  password: postgres
+>>>>>>> f99c832ff93d6919c0d702c2d32b1c826b83d76f
   host: localhost
   port: 5432
 
@@ -56,6 +64,10 @@ production:
   database: effectualproduction_production
   pool: 5
   username: postgres
+<<<<<<< HEAD
   password: asd123
+=======
+  password: postgres
+>>>>>>> f99c832ff93d6919c0d702c2d32b1c826b83d76f
   host: localhost
   port: 5432

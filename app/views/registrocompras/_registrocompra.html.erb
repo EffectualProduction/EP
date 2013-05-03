@@ -1,0 +1,16 @@
+<tr id=<%= "registrocompra_#{registrocompra.id}" %>>
+  <td><%= link_to registrocompra.id, edit_registrocompra_path(registrocompra), :remote => true %></td>
+  <td><%= registrocompra.descripcion_producto %></td>
+  <td><%= registrocompra.valor_total %></td>
+  <td><%= registrocompra. valor_unidad %></td>
+  <td><%= registrocompra.created_at %></td>
+
+  <td>
+    <%= link_to 'Mostrar', registrocompra, :remote => true, :class => 'btn btn-mini' %>
+    <%= link_to 'Editar', edit_registrocompra_path(registrocompra), :remote => true,
+        :class => 'btn btn-mini' %>
+    <%= link_to 'Eliminar', registrocompra, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+  </td>
+</tr>

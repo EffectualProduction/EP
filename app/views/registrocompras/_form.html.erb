@@ -1,10 +1,11 @@
-<%= simple_form_for @registrocompra, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :descripcion_producto %>
-  <%= f.input :valor_total %>
-  <%= f.input :valor_unidad %>
+<%= simple_form_for(@registrocompra, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.input :descripcion_producto, :label => "Descripcion del producto",  :required => true %>
+  <%= f.input :valor_total, :label => "Valor total",  :required => true %>
+  <%= f.input :valor_unidad, :label => "Valor unidad",  :required => true %>
+  
   <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                registrocompras_path, :class => 'btn' %>
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', registrocompras_path, :class => 'btn btn-small' %>
   </div>
 <% end %>
