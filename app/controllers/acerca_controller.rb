@@ -1,9 +1,4 @@
 class AcercaController < ApplicationController
-
-		layout 'acerca'
-
-  def index
-  	
-  end
+	layout 'acerca'
 end
 

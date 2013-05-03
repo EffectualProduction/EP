@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <title>EP</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/ventanas-modales.css">
   </head>
     <body background='images/fondo.png'>
 <div id='navb' class="navbar ">
@@ -85,12 +86,16 @@
     <%= image_tag('logo.png') %>
     </div>
   <div id='cont'>
-    <%= link_to image_tag('contactenos.png', :width => '80px', :title =>'Contactenos') %>
+    <a href="contactenos" class="clsVentanaIFrame btn btn-primary btn-large"><%=image_tag('contactenos.png', :width => '80px', :title =>'Contactenos') %></a>
   </div>
+
+
     <p id='con'>Contactenos</p>
    <footer id='foterr'>
       <p id='he'>HECHO POR ADSI 323921</p>
     </footer>
+    <script type="text/javascript" src="assets/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="assets/ventanas-modales.js"></script>
     </body>
     </html>
 

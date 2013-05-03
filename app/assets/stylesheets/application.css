@@ -14,12 +14,6 @@
  *= require_tree .
  */
 
- #lazybox div.estudiante { max-width: 500px; }
- #lazybox div.curso { max-width: 500px; }
- #lazybox div.instructor { max-width: 500px; }
- #lazybox div.materia{ max-width: 500px; }
- #lazybox div.horario { max-width: 500px; height: auto;}
-
 .lazybox {
   background: transparent !important;
 }

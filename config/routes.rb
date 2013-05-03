@@ -1,6 +1,8 @@
 Effectualproduction::Application.routes.draw do
   get "acerca/index" 
+  get "acerca/contactenos"
   match 'acerca' => 'acerca#index'
+  match 'contactenos' => 'acerca#contactenos'
 
 
   resources :usuarios
