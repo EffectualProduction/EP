@@ -1,4 +1,8 @@
 Effectualproduction::Application.routes.draw do
+  get "acerca/index" 
+  match 'acerca' => 'acerca#index'
+
+
   resources :usuarios
 
 
