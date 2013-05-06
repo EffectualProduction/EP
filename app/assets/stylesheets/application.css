@@ -114,8 +114,17 @@ li#efe{
 
 div#but{
 margin-top:-35px;
-margin-left: 30px;
+margin-left: 10px;
  }
+
+table#tablee{
+  width: 100%;
+}
+
+div#tablas{
+  width: 60%;
+  margin-left: 5%;
+}
 
 div#buto{
 margin-top: -50px;
@@ -164,34 +173,107 @@ img#user{
   margin-top: -300px;
 }
 
-img#img{
+img#notas{
+  width: 100px;
+  float: right;
+  padding-right: 50px;
   margin-top: -30px;
+}
+
+img#img{
+  margin-top: 50px;
   margin-left: -900px;
   width: 300px;
 }
 
+div#font{
+  height: 400px;
+  margin-left: 180px;
+  width: 70%;
+  background-image: url('fondog.png');
+}
+
+p#uso{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+p#items{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+div#ep{
+  height: 350px;
+  margin-left: 100px;
+  width: 30%;
+  background-image: url('fondo.png');
+}
+
+p#uyuu{
+  font-size: 15px;
+  color: white;
+}
+
+div#ayuu{
+  margin-top: -400px;
+}
+
+div#ayuuu{
+  margin-left: 1130px;
+  margin-top: -300px;
+}
+
+img#ayu{
+  width: 50px;
+  margin-top: -60px;
+  margin-left: 340px;
+}
+
+div#epe{
+  margin-top: -410px;
+  height: 350px;
+  margin-left: 500px;
+  width: 30%;
+  background-image: url('fondo.png');
+}
+
 
 div#user{
+  background-size: 100%;
   margin-top: 80px;
   margin-left: 100px;
   width: 50%;
-  background-color:white;
 }
 
 div#nu{
   margin-left: 100px;
 }
 
-div#text{
-  margin-top: 200px;
+div#nun{
+  margin-left: 65px;
+}
+
+
+div#textt{
+  margin-top: -320px;
   color: white;
-  margin-left: 880px;
+  margin-left: 920px;
 }
 
 h1#user{
   font-size: 30px;
   margin-left: 80px;
   color: white;
+}
+
+h1#ayuda{
+  font-size: 30px;
+  margin-left: 240px;
+  color: white;
+  margin-top: -50px;
 }
 
 div#bus{
@@ -203,9 +285,11 @@ a#nom{
   font-size: 20px;
 }
 
-div#pag{
-  margin-top: 230px;
-  margin-left: 300px;
+div#ayu{
+  margin-right: 300px;
+
+}
+
 }
 
 div#botonc{
@@ -246,3 +330,4 @@ div#cont{
 div#navb{
   height: 10px;
 }
+

@@ -1,4 +1,9 @@
 Effectualproduction::Application.routes.draw do
+  get "ayuda/index"
+   match 'ayuda' => 'ayuda#index'
+   get "ayuda/items"
+   match 'items' => 'ayuda#items'
+
   get "acerca/index" 
   get "acerca/contactenos"
   match 'acerca' => 'acerca#index'

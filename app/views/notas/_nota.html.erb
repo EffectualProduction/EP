@@ -8,9 +8,9 @@
 
   <td>
     <%= link_to 'Mostrar', nota, :remote => true, :class => 'btn btn-mini' %>
-    <%= link_to 'Editar', edit_nota_path(nota), :remote => true,
-        :class => 'btn btn-mini' %>
-    <%= link_to 'Eliminar', nota, 
+    <%= link_to image_tag('edi.png', :width=>30, :title=>'Editar'), edit_nota_path(nota), :remote => true,
+        :class => 'btn btn-mini btn-inverse' %>
+    <%= link_to image_tag('eliminar.png', :width=>30, :title=>'Eliminar'), nota, 
         :data => { :confirm => 'Esta Seguro?' },
         :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
   </td>
