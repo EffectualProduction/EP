@@ -11,74 +11,34 @@ class UsuariosController < ApplicationController
     end
   end
 
-  # GET /usuarios/1
-  # GET /usuarios/1.json
   def show
     @usuario = Usuario.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @usuario }
-    end
   end
 
-  # GET /usuarios/new
-  # GET /usuarios/new.json
   def new
-    @usuario = Usuario.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @usuario }
-    end
+      @usuario = Usuario.new
   end
 
-  # GET /usuarios/1/edit
   def edit
-    @usuario = Usuario.find(params[:id])
+      @usuario = Usuario.find(params[:id])
   end
 
-  # POST /usuarios
-  # POST /usuarios.json
   def create
-    @usuario = Usuario.new(params[:usuario])
-
-    respond_to do |format|
-      if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
-        format.json { render json: @usuario, status: :created, location: @usuario }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @usuario.errors, status: :unprocessable_entity }
-      end
-    end
+      @usuario = Usuario.new(params[:usuario])
+      render :action => :new unless @usuario.save
   end
 
-  # PUT /usuarios/1
-  # PUT /usuarios/1.json
   def update
-    @usuario = Usuario.find(params[:id])
-
-    respond_to do |format|
-      if @usuario.update_attributes(params[:usuario])
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @usuario.errors, status: :unprocessable_entity }
-      end
-    end
+      @usuario = Usuario.find(params[:id])
+      render :action => :edit unless @usuario.update_attributes(params[:usuario])
   end
 
-  # DELETE /usuarios/1
-  # DELETE /usuarios/1.json
   def destroy
-    @usuario = Usuario.find(params[:id])
-    @usuario.destroy
+      @usuario = Usuario.find(params[:id])
+      @usuario.destroy
+  end
 
-    respond_to do |format|
-      format.html { redirect_to usuarios_url }
-      format.json { head :no_content }
-    end
+  def find_usuario
+      @usuario = Usuario.find(params[:id]) if params[:id]
   end
 end

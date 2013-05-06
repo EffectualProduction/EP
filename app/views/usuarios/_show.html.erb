@@ -1,0 +1,18 @@
+<%- model_class = Usuario -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<div class='usuario'>
+  <p><%= @usuario.id %></p>
+  <p><%= @usuario.primapellido %></p>
+  <p><%= @usuario.secapellido %></p>
+  <p><%= @usuario.clave %></p>
+  <p><%= @usuario.email %></p>
+  <p><%= @usuario.fecha_nac %></p>
+  <p><%= @usuario.primnombre %></p>
+  <p><%= @usuario.secnombre %></p>
+  <p><%= @usuario.num_cedula %></p>
+  <p><%= @usuario.created_at %></p>
+  <p><%= @usuario.created_at %></p>
+</div>

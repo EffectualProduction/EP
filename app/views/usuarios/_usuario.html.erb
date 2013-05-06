@@ -1,0 +1,22 @@
+<tr id=<%= "usuario_#{usuario.id}" %>>
+  <td><%= link_to usuario.id, edit_usuario_path(usuario), :remote => true %></td>
+  <td><%= @usuario.primapellido %></td>
+  <td><%= @usuario.secapellido %></td>
+  <td><%= @usuario.clave %></td>
+  <td><%= @usuario.email %></td>
+  <td><%= @usuario.fecha_nac %></td>
+  <td><%= @usuario.primnombre %></td>
+  <td><%= @usuario.secnombre %></td>
+  <td><%= @usuario.num_cedula %></td>
+  <td><%= @usuario.created_at %></td>
+  <td><%= @usuario.created_at %></td>
+
+  <td>
+    <%= link_to image_tag('mostrar.png', :width=>30, :title=>'Mostrar'), usuario, :remote => true, :class => 'btn btn-success btn-mini' %>
+    <%= link_to image_tag('editar.png', :width=>30, :title=>'Editar'), edit_usuario_path(usuario), :remote => true,
+        :class => 'btn btn-mini' %>
+    <%= link_to image_tag('eliminar.png', :width=>30, :title=>'Eliminar'), usuario, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+  </td>
+</tr>

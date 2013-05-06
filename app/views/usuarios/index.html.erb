@@ -28,29 +28,14 @@
     </tr>
   </thead>
   <tbody>
-    <% @usuarios.each do |usuario| %>
-      <tr>
-        <td><%= link_to usuario.id, usuario_path(usuario) %></td>
-        <td><%= usuario.primnombre %></td>
-        <td><%= usuario.primapellido %></td>
-        <td><%= usuario.email %></td>
-        <td><%= usuario.fecha_nac %></td>
-        <td>
-          <%= link_to image_tag('edi.png', :width=>30, :title=>'Editar'),edit_usuario_path(usuario), :class => 'btn btn-mini btn-inverse' %>
-          <%= link_to image_tag('eliminar.png', :width=>30, :title=>'Eliminar'),
-                      usuario_path(usuario),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
+       <%= render @usuarios %>
+    </tbody>
   </tbody>
 </table>
 </div>
  </div>
 <div id="nu">
-<%= link_to image_tag('nuevo.png', :width=>'45px', :title=>'Nuevo'),new_usuario_path,:class => 'btn btn-inverse' %>
+<%= link_to image_tag('nuevo.png', :width=>'45px', :title=>'Nuevo'),new_usuario_path, :remote => true, :class => 'btn btn-inverse' %>
 </div>
 
  <div id="text">
