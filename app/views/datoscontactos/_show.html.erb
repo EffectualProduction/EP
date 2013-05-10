@@ -1,0 +1,14 @@
+<%- model_class = Datoscontacto -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<div class='datoscontacto'>
+  <p><%= @datoscontacto.id %></p>
+  <p><%= @datoscontacto.nombre%></p>
+  <p><%= @datoscontacto.apellido%></p>
+  <p><%= @datoscontacto.direccion%></p>
+  <p><%= @datoscontacto.email%></p>
+  <p><%= @datoscontacto.movil%></p>
+  <p><%= @datoscontacto.telefono%></p>
+</div>
