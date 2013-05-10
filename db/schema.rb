@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20130510151111) do
+=======
 ActiveRecord::Schema.define(:version => 20130429161920) do
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 
   create_table "bordados", :force => true do |t|
     t.date     "fecha_envio"
@@ -87,6 +91,17 @@ ActiveRecord::Schema.define(:version => 20130429161920) do
     t.datetime "updated_at",            :null => false
   end
 
+<<<<<<< HEAD
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "salt"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+=======
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   create_table "usuarios", :force => true do |t|
     t.string   "primapellido"
     t.string   "secapellido"

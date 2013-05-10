@@ -25,7 +25,11 @@ footer, header, hgroup, menu, nav, section {
 	position: absolute;
 }
 body {
+<<<<<<< HEAD
+	line-height: 1; 
+=======
 	line-height: 1;
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 }
 
 
@@ -246,6 +250,19 @@ form#bus{
   margin-top: -20px;
 }
 
+<<<<<<< HEAD
+form#buse{
+  margin-left: 800px;
+  margin-top: -35px;
+}
+
+img#login{
+  width: 100px;
+  margin-left: 90px;
+}
+
+=======
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 li#ef{
   margin-left: 850px;
   margin-top: 10px;
@@ -260,14 +277,78 @@ li#efe{
   font-size: 20px;
 }
 
+<<<<<<< HEAD
+li#efere{
+  margin-left: 880px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+div#pass{
+  margin-left: 30px;
+  color: black;
+}
+
+p#log{
+  color: white;
+  margin-left: 80px;
+  font-size: 40px;
+}
+
+div#session{
+  width: 20%;
+  margin-top: 80px;
+  margin-left: 500px;
+}
+
+div#sessione{
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+div#logtex{
+  color: white;
+  float: right;
+  margin-top: -300px;
+  padding-right: 100px;
+}
+
+
+div#logtexo{
+  color: white;
+  float: right;
+  margin-top: -380px;
+  padding-right: 100px;
+}
+
+=======
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 div#but{
 margin-top:-70px;
 margin-left: -70px;
  }
 
+<<<<<<< HEAD
+li#ingreso{
+  margin-top: 20px;
+  margin-left: 450px;
+}
+
+a#ingre{
+  font-size: 30px;
+  margin-left: -300px;
+}
+
+div#buto{
+margin-top: -70px;
+margin-left: -80px;
+=======
 div#buto{
 margin-top: -70px;
 margin-left: -40px;
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
  }
 
 footer#foter{
@@ -279,6 +360,18 @@ footer#foter{
   border-radius: 4px; 
 }
 
+<<<<<<< HEAD
+footer#foterer{
+  margin-top:-185px;
+  margin-left: 0px; 
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border-radius: 4px; 
+}
+
+=======
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 footer#foterr{
   margin-top:-185px;
   margin-left: -0px; 
@@ -314,7 +407,17 @@ img#user{
 
 img#img{
   margin-top: -30px;
+<<<<<<< HEAD
+  margin-left: -1100px;
+  width: 300px;
+}
+
+img#imgi{
+  margin-top: -30px;
+  margin-left: -950px;
+=======
   margin-left: -930px;
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   width: 300px;
 }
 

@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+<p id="log">Login</p>
+<hr>
+<div id='session' class='well'>
+	<img id="login" src="assets/LOGIN.png">
+<%= form_tag sessions_path do %>
+  <div id='pass' class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div id='pass' class="field">
+    <%= label_tag :password  %>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Ingresar", :class=> 'btn btn-primary' %></div>
+<% end %>
+</div>
+<div id="logtex">
+<p align="justify">
+      Esta Aplicación estará centrada en el Proceso
+      <br><br>
+       de control de Producción del Centro 
+       <br><br>
+      de confección y moda (SENA), y por esta razón  
+      <br><br>
+     constará de cuatro (4) Módulos, 
+     <br><br>
+     ushuisdsa dsdusaidsa uidasdiass dsaskdajsdkasj,
+     <br><br>
+     djaeduwyewque sjdduwqyew sjdsjdwquwq jdhasdwu
+     <br><br>
+     shdasdywqdiuw oidwodiqw odiowidwq owdi.
+    </p>
+
+
+</div>
+=======
 <%= form_tag sessions_path do %>
   <div class="field">
     <%= label_tag :email %>
@@ -9,3 +46,4 @@
   </div>
   <div class="actions"><%= submit_tag "Ingresar" %></div>
 <% end %>
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce

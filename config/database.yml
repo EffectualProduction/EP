@@ -18,7 +18,15 @@ development:
   database: effectualproduction_development
   pool: 5
   username: postgres
+<<<<<<< HEAD
+<<<<<<< HEAD
+  password: oliva
+=======
   password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
+=======
+  password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   host: localhost
   port: 5432
 
@@ -46,7 +54,15 @@ test:
   database: effectualproduction_test
   pool: 5
   username: postgres
+<<<<<<< HEAD
+<<<<<<< HEAD
+  password: oliva
+=======
   password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
+=======
+  password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   host: localhost
   port: 5432
 
@@ -56,7 +72,15 @@ production:
   database: effectualproduction_production
   pool: 5
   username: postgres
+<<<<<<< HEAD
+<<<<<<< HEAD
+  password: oliva
+=======
   password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
+=======
+  password: postgres
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   host: localhost
   port: 5432
 

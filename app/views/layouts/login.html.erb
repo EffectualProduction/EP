@@ -2,7 +2,6 @@
 <html>
 <head>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
  <body background='assets/fondo.png'>
@@ -13,40 +12,34 @@
  <div id='nava' class="navbar"> 
    <div id='tra' class="tabbable tabs-below">
   <ul class="nav nav-tabs">
-   <li id='efe' ><a href="acerca"  >Effectual Production</a></li>
+   <li id='efere' ><a href="#"  >Effectual Production</a></li>
   </ul>
 </div>
 </div>
 </div>
 </div>
-<div id='but'>
+<div id='buton'>
    <div id='nava' class=""> 
   <div class="navbar navbar-inverse">
  <ul class="nav nav-tabs" >
-  <li><a href="#tab1" data-toggle="tab" ><a href="inicio">Inicio</a></a></li>
-    <li><a href="#tab1" data-toggle="tab" ><a href="notas">Notas</a></a></li>
-    <li ><a href="#tab2" data-toggle="tab"><a href="solicitudes">Solicitudes</a></a></li>
-    <li ><a href="#tab3" data-toggle="tab"><a href="registrocompras">Registros</a> </a></li>
-    <li ><a href="#tab3" data-toggle="tab"><a href="usuarios">Usuarios</a> </a></li>
-    <li ><a href="#tab3" data-toggle="tab"><a href="ayuda">Ayuda</a> </a></li>
+  <li id='ingreso'><a id='ingre' href="#">Ingreso</a></li>
   </ul>
-
 </div>
 </div>
 </div>
   </div>
-  <form id='bus' class="navbar-search pull-left">
+  <form id='buse' class="navbar-search pull-left">
   <input id='bus' type="text" class="search-query" placeholder="Search">
 </form>
     </div>
-<<<<<<< HEAD
     <img id='imgi' src="assets/logo.png">
-=======
-    <img id='img' src="assets/logo.png">
->>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 <%= yield %>
 <footer id='foter'>
       <p id='he'>HECHO POR ADSI 323921</p>
     </footer>
 </body>
 </html>
+
+
+
+

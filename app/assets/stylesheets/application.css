@@ -12,7 +12,11 @@
  *= require lazybox
  *= require_jquery-ui
  *= require_tree .
+<<<<<<< HEAD
+ */ 
+=======
  */
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 
 .lazybox {
   background: transparent !important;
@@ -182,6 +186,14 @@ div#nava{
   margin-top: -60px;
 }
 
+<<<<<<< HEAD
+div#buton{
+margin-top:-70px;
+margin-left: -70px;
+ }
+
+=======
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
 img#user{
   width: 100px;
   float: right;
@@ -198,7 +210,11 @@ img#notas{
 
 img#img{
   margin-top: 50px;
+<<<<<<< HEAD
+  margin-left: -1000px;
+=======
   margin-left: -900px;
+>>>>>>> 235bd7d453691412561f0aeb4c18a482af6e15ce
   width: 300px;
 }
 
