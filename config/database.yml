@@ -18,9 +18,9 @@ development:
   database: effectualproduction_development
   pool: 5
   username: postgres
-  password: cristv95
+  password: oliva
   host: localhost
-  port: 5433
+  port: 5432
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -46,10 +46,9 @@ test:
   database: effectualproduction_test
   pool: 5
   username: postgres
-  password: cristv95
+  password: oliva
   host: localhost
-  port: 5433
-
+  port: 5432
 
 production:
   adapter: postgresql
@@ -57,7 +56,7 @@ production:
   database: effectualproduction_production
   pool: 5
   username: postgres
-  password: cristv95
+  password: oliva
   host: localhost
-  port: 5433
+  port: 5432
 

@@ -1,4 +1,6 @@
 Effectualproduction::Application.routes.draw do
+  get "inicio/index"
+  match 'inicio' => 'inicio#index'
   get "ayuda/index"
    match 'ayuda' => 'ayuda#index'
    get "ayuda/items"
@@ -86,7 +88,7 @@ Effectualproduction::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'inicio#index'
 
   # See how all your routes lay out with "rake routes"
 

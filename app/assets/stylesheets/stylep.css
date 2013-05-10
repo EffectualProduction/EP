@@ -242,7 +242,7 @@ input#bus{
 }
 
 form#bus{
-  margin-left: 25px;
+  margin-left: 20px;
   margin-top: -20px;
 }
 
@@ -267,7 +267,7 @@ margin-left: -70px;
 
 div#buto{
 margin-top: -70px;
-margin-left: 40px;
+margin-left: -40px;
  }
 
 footer#foter{

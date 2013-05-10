@@ -64,6 +64,12 @@ body {
   color: #333333;
 }
 
+h1#wel{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
 p#nom{
   margin-top: -20px;
   text-align: center;
@@ -79,8 +85,18 @@ input#nom{
   margin-left: 180px;
 }
 
+
+blockquote#uno{
+  margin-right: 130px;
+  margin-top: -350px;
+}
+
 textarea#nom{
   margin-left: 180px;
+}
+
+div#uno{
+  margin-left: 100px;
 }
 
 .navbar{
@@ -94,7 +110,7 @@ input#bus{
 }
 
 form#bus{
-  margin-left: 80px;
+  margin-left: 50px;
   margin-top: -20px;
 }
 
