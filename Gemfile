@@ -29,6 +29,7 @@ gem 'lazybox'
 gem 'prawn'
 gem 'pdf-reader'
 gem 'paperclip'
+gem 'sorcery'
 
 
 # To use ActiveModel has_secure_password

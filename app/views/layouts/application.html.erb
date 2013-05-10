@@ -40,6 +40,13 @@
   <input id='bus' type="text" class="search-query" placeholder="Search">
 </form>
     </div>
+    <% if current_user %>
+  Sesion Iniciada como <%= current_user.email %>.
+  <%= link_to "Cerrar Sesion", logout_path %>
+<% else %>
+  <%= link_to "Registrarse", signup_path %> o
+  <%= link_to "Ingresar", login_path %>.
+<% end %>
     <img id='img' src="assets/logo.png">
 <%= yield %>
     <footer id='foter'>

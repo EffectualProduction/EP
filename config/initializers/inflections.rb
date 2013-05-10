@@ -29,6 +29,8 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'action', 'actions'
   inflect.irregular 'pais', 'paises'
   inflect.irregular 'nota', 'notas'
+  inflect.irregular 'user', 'users'
+  inflect.irregular 'session', 'sessions'
 end
 
 
