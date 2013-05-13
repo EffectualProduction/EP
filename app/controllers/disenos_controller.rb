@@ -1,6 +1,5 @@
 class DisenosController < ApplicationController
-  # GET /disenos
-  # GET /disenos.json
+ 
   def index
     @disenos = Diseno.all
 
@@ -10,8 +9,6 @@ class DisenosController < ApplicationController
     end
   end
 
-  # GET /disenos/1
-  # GET /disenos/1.json
   def show
     @diseno = Diseno.find(params[:id])
 
@@ -21,8 +18,6 @@ class DisenosController < ApplicationController
     end
   end
 
-  # GET /disenos/new
-  # GET /disenos/new.json
   def new
     @diseno = Diseno.new
 
@@ -32,13 +27,10 @@ class DisenosController < ApplicationController
     end
   end
 
-  # GET /disenos/1/edit
   def edit
     @diseno = Diseno.find(params[:id])
   end
 
-  # POST /disenos
-  # POST /disenos.json
   def create
     @diseno = Diseno.new(params[:diseno])
 
@@ -53,8 +45,6 @@ class DisenosController < ApplicationController
     end
   end
 
-  # PUT /disenos/1
-  # PUT /disenos/1.json
   def update
     @diseno = Diseno.find(params[:id])
 
@@ -69,8 +59,6 @@ class DisenosController < ApplicationController
     end
   end
 
-  # DELETE /disenos/1
-  # DELETE /disenos/1.json
   def destroy
     @diseno = Diseno.find(params[:id])
     @diseno.destroy
